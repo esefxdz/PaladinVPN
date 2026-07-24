@@ -345,6 +345,7 @@ class SessionTimer extends ChangeNotifier {
     _timer?.cancel();
     _timer = null;
     _currentSpeedKBps = 0.0;
+    _hasSyncedOnce = false;
     VpnNotificationManager.cancel();
     notifyListeners();
   }
